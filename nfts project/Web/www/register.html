@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://kit.fontawesome.com/b6b9586b26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style_login.css" />
+    <!-- <script src="../JS/script.js" defer></script> -->
+</head>
+<body>
+    <div id="sign_up">
+        <form id="registerForm"  action="./htbin/register.py" method="post">
+
+          <span>Register</span>
+
+
+          <div id="field">
+            <label><i class="fas fa-user"></i></label>
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname" class="box-input" />
+
+          </div>
+
+          <div id="field">
+            <label><i class="fas fa-user"></i></label>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname"class="box-input"  />
+
+          </div>
+
+
+          <div id="field">
+            <label><i class="fas fa-user"></i></label>
+            <input type="text" id="birthdate" name="birthdate" placeholder="birthdate" class="box-input"  />
+
+          </div>
+
+
+          <div id="field">
+            <label><i class="fas fa-user"></i></label>
+            <input type="text" id="username" name="username" placeholder="Username" class="box-input" />
+
+          </div>
+
+
+          <div id="field">
+            <label><i class="fas fa-lock"></i></label>
+            <input type="password" id='userpwd' name="userpwd" placeholder="Password (8caractére une maj et une min et chiffre" class="box-input" />
+
+          </div>
+
+
+          <div id="field">
+            <label><i class="fas fa-envelope-open"></i></label>
+            <input type="text" id="useremail" name="useremail" value="" placeholder="UserEmail" class="box-input"  />
+
+          </div>
+  
+          
+        <div id="field">
+            <input type="submit" name="reg_user" value="Register" onclick="submitForm()" />
+          </div>
+        </form>
+  
+        <p> J'ai déja un compte?
+          <button><a href="login.html">Login</a></button>
+        </p>
+      </div>
+      <script src="JS/jsRegister.js"></script>
+      </body>
+</html>
